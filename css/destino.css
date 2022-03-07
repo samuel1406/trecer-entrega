@@ -1,0 +1,326 @@
+/* estet serie un comentario en css puro*/
+/***********
+ejemplos saas2
+*************/
+/*operaciones aritmeticas*/
+body header {
+  width: 720px;
+}
+body main {
+  width: 720px;
+}
+body main .col-1 {
+  width: 360px;
+}
+body main .col-2 {
+  width: 300px;
+}
+body footer {
+  width: 720px;
+}
+
+/******** 
+ejemplos de condicionales
+1er valor == 2do valor / es valido si es igual
+1er valor != 2do valor / es valido si es distinto
+1er valor > 2do valor / es valido si es mayor
+1er valor < 2do valor / es valido si es menor
+************/
+p {
+  color: red;
+}
+
+/* Bucles*/
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+h4 {
+  font-size: 0.75rem;
+}
+
+h5 {
+  font-size: 0.6rem;
+}
+
+h6 {
+  font-size: 0.5rem;
+}
+
+.col-3 {
+  width: 240px;
+}
+
+.col-4 {
+  width: 180px;
+}
+
+.col-5 {
+  width: 144px;
+}
+
+/********** Heach*******/
+#secciones {
+  background-image: url("./images/body.svg");
+}
+
+#secciones {
+  background-image: url("./images/header.svg");
+}
+
+#secciones {
+  background-image: url("./images/main.svg");
+}
+
+#secciones {
+  background-image: url("./images/article.svg");
+}
+
+#secciones {
+  background-image: url("./images/div.svg");
+}
+
+#secciones {
+  background-image: url("./images/footer.svg");
+}
+
+/* Mapas*/
+.boton-twitter {
+  background-color: grey azure;
+  border: grey black;
+}
+
+.boton-facebook {
+  background-color: grey azure;
+  border: grey black;
+}
+
+.boton-mail {
+  background-color: grey azure;
+  border: grey black;
+}
+
+.boton-instagram {
+  background-color: grey azure;
+  border: grey black;
+}
+
+.boton-youtube {
+  background-color: grey azure;
+  border: grey black;
+}
+
+.boton-snapchat {
+  background-color: grey azure;
+  border: grey black;
+}
+
+/*extend*/
+.boton, .boton-nuevo {
+  width: 200px;
+  height: 50px;
+  background-color: aqua;
+  text-align: center;
+  color: black;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.boton-nuevo {
+  border: blue;
+}
+
+/*Mixins*/
+.caja-1 {
+  width: 500px;
+  height: 250px;
+}
+
+.caja-2 {
+  width: 800px;
+  height: 350px;
+}
+
+.caja-3 {
+  width: 1000px;
+  height: 150px;
+}
+
+/*
+*  html5resetcss
+*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/******************
+ESTILOS DE TIPOGRAFIAS
+*******************************/
+/*******************
+     RESPONSIVE 
+ ******************/
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* Styles */
+}
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 321px) {
+  /* Styles */
+}
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width: 320px) {
+  /* Styles */
+}
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* Styles */
+}
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* Styles */
+}
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  /* Styles */
+}
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+}
+/* Large screens ----------- */
+@media only screen and (min-width: 1824px) {
+  /* Styles */
+}
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */
+}
+/*anidamiento*/
+.lista {
+  list-style: none;
+  background-color: #ff009d;
+  width: 360px;
+}
+.lista .itemlista {
+  padding: 15px;
+  display: inline-block;
+}
+.lista .itemlista .enlacelista {
+  text-decoration: none;
+  font-size: 16px;
+  color: azure;
+}
+
+ul {
+  list-style: none;
+}
+ul li {
+  padding: 15px;
+  display: inline-block;
+}
+ul li:hover {
+  background-color: aqua;
+}
+ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: grey;
+}
+ul li a:active {
+  border: solid red 1px;
+}
+ul li a:link {
+  color: black;
+}
+ul li a:visited {
+  color: #000;
+  background-color: red;
+}
+
+footer {
+  background-color: darkgrey;
+}
+
+/*# sourceMappingURL=destino.css.map */

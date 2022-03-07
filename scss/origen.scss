@@ -1,0 +1,70 @@
+//este seria un comentario en linea en scss
+/* estet serie un comentario en css puro*/
+
+// IMPORT
+//@import"scss/bootstrap.scss";
+@import"ejemplos-sass2";
+@import"variables";
+@import"colores";
+//@import"estructura";
+@import"reseteo";
+@import"tipografia";
+@import"responsive";
+
+
+//VARIABLES
+// sintaxis --> $variable: valor;
+$color:rgb(255, 0, 157);
+$anchodecaja:720px;
+
+
+
+
+
+/*anidamiento*/
+.lista{
+    list-style: none;
+    background-color: $color;
+    width: calc($anchodecaja /2);
+
+    .itemlista{
+        padding: 15px;
+        display: inline-block;
+        .enlacelista{
+        text-decoration: none;
+        font-size: 16px;
+        color: azure
+        }
+    }
+}
+
+ul{
+    list-style: none;
+    li{
+        padding: 15px;
+        display: inline-block;
+        &:hover{
+            background-color: aqua;
+        }
+        a{
+            text-decoration: none;
+            font-size: 16px;
+            color: grey;
+            &:active{
+                border: solid red 1px;
+            }   
+            &:link{
+                color: black;
+            }
+            &:visited{
+                color: #000;
+                background-color: red;
+            }
+        }
+        
+
+    }
+}
+footer{
+    background-color:darkgrey;
+}

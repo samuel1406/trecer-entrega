@@ -1,0 +1,122 @@
+@import"colores";
+@import"variables";
+/***********
+ejemplos saas2
+*************/
+/*operaciones aritmeticas*/
+
+
+$anchura: 720px;
+
+body{
+    header{
+        width: $anchura;
+
+    }
+    main{
+        width: $anchura;
+        .col-1{
+            width: calc($anchura /2);
+        }
+        .col-2{
+            width: calc($anchura /2) - 60;
+        }
+
+
+    }
+    footer{
+        width: $anchura;
+
+    }
+}
+/******** 
+ejemplos de condicionales
+1er valor == 2do valor / es valido si es igual
+1er valor != 2do valor / es valido si es distinto
+1er valor > 2do valor / es valido si es mayor
+1er valor < 2do valor / es valido si es menor
+************/
+$seccion: 720px;
+p{
+    
+  @if $seccion == $ancho {
+     color: red; 
+  }  
+  @else if $seccion < $ancho{
+      color:greenyellow;
+  }
+  @else if $seccion > $ancho{
+    color:blue;
+}
+@else {
+    color:grey;
+}
+}
+/* Bucles*/
+// sintaxis -> @for $variavles
+@for $var from 1 through 6 {
+
+  h#{$var}{
+    font-size: calc(3rem/$var);
+}   
+}
+@for $columnas from 3 to 6 {
+    .col-#{$columnas} { 
+        width: calc($ancho)/$columnas;
+    }  
+}
+/********** Heach*******/
+@each $secciones in body,header,main,article,div,footer {
+    ##{secciones} {
+        background-image: url("./images/#{$secciones}.svg");
+    }  
+}
+/* Mapas*/
+$redes:(
+    // clave: valores
+    twitter:   grey,
+    facebook:  grey,
+    mail:      grey,
+    instagram: grey,
+    youtube:   grey,
+    snapchat:  grey
+);
+// Each con Mapas
+@each $nombres, $color in $redes {
+    // fragmento que repite
+    .boton-#{$nombres} {
+      background-color: $color azure;
+      border: $color black;
+    }
+  }
+  /*extend*/
+  .boton {
+    width: 200px;
+    height: 50px;
+    background-color: aqua;
+    text-align: center;
+    color: black;
+    border-radius: 10px;
+    border: 1px solid black;
+  }
+  .boton-nuevo{
+      @extend .boton;
+      border: blue;
+  }
+
+  /*Mixins*/
+  @mixin tamanio($anchuura, $altura) {
+    // fragmento que se imprime
+    width: $anchuura;
+    height: $altura;
+  }
+  
+  .caja-1{
+    @include tamanio(500px, 250px);
+  }
+  .caja-2{
+    @include tamanio(800px, 350px);
+  }
+  .caja-3{
+    @include tamanio(1000px, 150px);
+  }
